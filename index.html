@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Web Interface</title>
+</head>
+<body>
+    <h1>ChatGPT Web Interface</h1>
+    <form action="/ask" method="post">
+        <label for="query">Ask a question:</label>
+        <input type="text" id="query" name="query" required>
+        <button type="submit">Submit</button>
+    </form>
+    {% if query %}
+        <h2>Your Question:</h2>
+        <p>{{ query }}</p>
+        <h2>Response:</h2>
+        <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>
