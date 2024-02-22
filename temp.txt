@@ -28,3 +28,6 @@ Traceback (most recent call last):
   File "/home/ubuntu/WorkSpace/FlaskChatGPT/venv/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
     raise TemplateNotFound(template)
 jinja2.exceptions.TemplateNotFound: index.html
+
+
+openai.error.AuthenticationError: Incorrect API key provided: sk-aggk4***************************************6tvq. You can find your API key at https://platform.openai.com/account/api-keys.
